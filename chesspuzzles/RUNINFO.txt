@@ -1,0 +1,10 @@
+Deploy to pages
+
+npm run build && npm run deploy
+
+Local Preview 
+
+npm run build
+npm run preview
+
+
