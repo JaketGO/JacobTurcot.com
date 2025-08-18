@@ -1,64 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jacob Turcot's Website</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jacob Turcot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <h1 class="logo">Jacob Turcot</h1>
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-    body {
-      background-color: #121212;
-      color: #e0e0e0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      padding: 2rem;
-    }
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h2>Hello, I'm Jacob Turcot</h2>
+          <p>Technical Analyst • Programmer</p>
+        </div>
+      </section>
 
-    .container {
-      max-width: 600px;
-    }
+      <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+          Welcome to my website. My name is Jacob Turcot, I am a 25 year old
+          technical analyst based in the Greater Boston area. I graduated from
+          the University of Massachusetts Amherst in 2022 with a degree in
+          Mathematics, focusing on Statistics and Data Science.
+        </p>
+        <p>
+          I currently work at the Automobile Insurers Bureau of Massachusetts.
+          My role involves database management, Excel automation, VBA scripting,
+          custom Python based applications, and data structure solutions.
+        </p>
+      </section>
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: #ff6b6b;
-    }
+      <section id="projects" class="section">
+        <h2>Pet Projects</h2>
+        <div class="projects">
+          <div class="project-card">
+            <h3>Hedge Calculator</h3>
+            <p>
+              My first project. A simple form based calculator regarding sports
+              wagers.
+            </p>
+            <a
+              href="https://hedgecalculator.net/"
+              target="_blank"
+              class="project-link"
+              >Visit Project</a
+            >
+          </div>
+          <div class="project-card">
+            <h3>Jaket's Chess Puzzles</h3>
+            <p>
+              My custom chess puzzle program utlizing a React enviroment and
+              over 500,000 unique puzzles
+            </p>
+            <a
+              href="https://jaketgo.github.io/chesspuzzles/"
+              target="_blank"
+              class="project-link"
+              >Visit Project</a
+            >
+          </div>
+          <div class="project-card">
+            <h3>PDF Search Program</h3>
+            <p>
+              This program is a Python-based GUI for searching text inside PDF
+              files. You can search a single PDF or all PDFs in a folder for
+              specific terms. It automatically saves the results in a dedicated
+              folder.
+            </p>
+            <a
+              href="https://github.com/JaketGO/PDF-Search/blob/main/README.md"
+              target="_blank"
+              class="project-link"
+              >Visit Project</a
+            >
+          </div>
+          <div class="project-card">
+            <h3>Super Secret Project</h3>
+            <p>New project in the works, check back soon :)</p>
+          </div>
+        </div>
+      </section>
 
-    p {
-      font-size: 1.2rem;
-      color: #b0b0b0;
-    }
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:you@example.com">Jaturcot@gmail.com</a></p>
+        <div class="socials">
+          <a href="https://github.com/JaketGO" target="_blank">GitHub</a>
+        </div>
+      </section>
+    </main>
 
-    .loader {
-      margin: 2rem auto;
-      border: 6px solid #333;
-      border-top: 6px solid #ff6b6b;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="loader"></div>
-    <h1>👷 Under Construction 👷</h1>
-    <p>Hello! I am still building the main website. Check back soon!</p>
-  </div>
-</body>
+    <footer>
+      <p>&copy; 2025 Jacob Turcot. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
