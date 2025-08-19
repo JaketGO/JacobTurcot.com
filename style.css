@@ -5,18 +5,23 @@
   box-sizing: border-box;
 }
 
-html,
+html {
+  font-size: 16px; /* base font size, scalable with rem */
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Segoe UI", sans-serif;
   background-color: #fffdf9;
   color: #2e2e2e;
-  scroll-behavior: smooth;
+  line-height: 1.6;
 }
 
 /* Sticky Navbar */
 .navbar {
   position: sticky;
   top: 0;
+  width: 100%;
   background: #fdfcf9;
   border-bottom: 1px solid #ddd4c4;
   z-index: 999;
@@ -25,7 +30,7 @@ body {
 .nav-container {
   max-width: 1100px;
   margin: auto;
-  padding: 1rem;
+  padding: 1rem 2%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,7 +44,7 @@ body {
 
 .nav-links a {
   color: #3b3b3b;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -57,30 +62,30 @@ body {
   min-height: 80vh;
   background: linear-gradient(to right, #f4efe6, #e3d9c6);
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 3rem 2%;
 }
 
 .hero-text h2 {
-  font-size: 2.8rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
   color: #4e3b2a;
 }
 
 .hero-text p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #6b5844;
 }
 
 /* Sections */
 .section {
-  padding: 4rem 1.5rem;
+  padding: 3rem 5%;
   max-width: 1000px;
   margin: auto;
   background-color: #ffffff;
 }
 
 .section h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   margin-bottom: 1rem;
   color: #7a994e;
 }
@@ -100,7 +105,7 @@ body {
 
 .project-card {
   background: #f8f6f1;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 12px;
   border: 1px solid #e0dacb;
   box-shadow: 0 4px 10px rgba(130, 110, 90, 0.1);
@@ -137,7 +142,7 @@ body {
 }
 
 .socials a {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
   text-decoration: none;
   color: #7a994e;
   font-weight: 500;
@@ -151,20 +156,51 @@ body {
 /* Footer */
 footer {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 5%;
   background: #f5f3ed;
   font-size: 0.9rem;
   color: #6f6f6f;
 }
 
 /* Responsive Design */
+@media (min-width: 576px) {
+  .hero-text h2 {
+    font-size: 2.2rem;
+  }
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+}
+
 @media (min-width: 768px) {
   .projects {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 2%;
   }
 
   .project-card {
     flex: 1 1 45%;
+  }
+
+  .hero-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .nav-links a {
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-text h2 {
+    font-size: 2.8rem;
+  }
+  .hero-text p {
+    font-size: 1.3rem;
   }
 }
